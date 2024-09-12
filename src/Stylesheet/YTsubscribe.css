@@ -1,0 +1,23 @@
+.SP1{
+    position:fixed;
+    top:170px;
+    left:100px;
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    width: 97%;
+    overflow: auto;
+}
+
+.subPT1 {
+    position: fixed;
+    top:120px;
+    left:100px;
+    display: flex;
+}
+
+.subPara3 {
+    font-size: 25px;
+    color:white;
+    margin-left: 10px;
+}

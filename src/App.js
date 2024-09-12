@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { createBrowserRouter, RouterProvider,} from 'react-router-dom';
+import Home from "./Pages/YThome";
+import Shorts from "./Pages/YTshorts";
+import Subscribe from "./Pages/YTsubscribe";
+import You from "./Pages/YTyou";
+
+
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element: <Home/>,
+  },
+  {
+    path:"/YTshorts",
+    element: <Shorts />,
+  },
+  {
+    path:"/YTsubscribe",
+    element: <Subscribe />,
+  },
+  {
+    path:"/YTyou",
+    element: <You />,
+  }
+  
+])
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return (<div>
+    <RouterProvider router={router} />
     </div>
   );
 }
 
 export default App;
+
